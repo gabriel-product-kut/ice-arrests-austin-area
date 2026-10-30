@@ -68,10 +68,21 @@
     width: 100%;
     position: relative;
   }
+  /* Reserve room for the title, controls and source in Grove's 760px iframe. */
+  .ice-chart {
+    display: flex;
+    flex-direction: column;
+    height: 760px;
+  }
+  .chart-wrap {
+    min-height: 0;
+    flex: 1;
+  }
+  .ice-chart > :not(.chart-wrap) { flex-shrink: 0; }
   svg {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     overflow: visible;
   }
   .grid line {
@@ -133,7 +144,10 @@
   @media (max-width: 560px) {
     .ice-chart {
       padding: 14px 12px 8px;
+      height: auto;
     }
+    .chart-wrap { flex: none; }
+    svg { height: auto; }
     .tab-button {
       font-size: 17px;
     }

@@ -2,7 +2,7 @@
 
 Interactive ICE arrests chart for Central Texas, Texas and the United States.
 
-Restored from the local ice-arrests-austin-area Git checkout, preserving its history and chart.
+Restored from the local ice-arrests-austin-area Git checkout, preserving its history, chart data and interactions. The chart scales to keep the source credit visible in Grove's existing 760-pixel iframe.
 
 Published chart: https://gabriel-product-kut.github.io/ice-arrests-austin-area/
 
